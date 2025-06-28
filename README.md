@@ -13,11 +13,6 @@ Perform the following tasks in RStudio:
 - Inferential statistics
   - OLS linear regression
 
-## Files
-
-- `findex_microdata2021.csv` — dataset used for analysis  
-- `MyRProject.Rproj` — R project file  
-- `.gitignore` — files ignored by Git  
 
 ## Data source
 
