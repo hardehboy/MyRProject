@@ -1,107 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>MyRProject Overview</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-  body {
-    font-family: 'Inter', sans-serif;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 24px;
-    background: #f5f7fa;
-    color: #222;
-    line-height: 1.6;
-  }
-  h1 {
-    color: #1e40af;
-    font-weight: 700;
-    font-size: 2.5rem;
-    margin-bottom: 0.3em;
-  }
-  h2 {
-    font-weight: 600;
-    color: #2563eb;
-    margin-top: 2.5em;
-    border-bottom: 2px solid #93c5fd;
-    padding-bottom: 6px;
-  }
-  ul {
-    margin-left: 20px;
-    margin-top: 0.5em;
-  }
-  li {
-    margin-bottom: 0.3em;
-  }
-  a {
-    color: #2563eb;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  code {
-    background: #e0e7ff;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 0.95em;
-  }
-  p {
-    margin-top: 1em;
-  }
-  footer {
-    margin-top: 4em;
-    font-size: 0.85em;
-    color: #6b7280;
-    text-align: center;
-    border-top: 1px solid #d1d5db;
-    padding-top: 14px;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <title>MyRProject Overview</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #2a7ae2;
+    }
+    ul {
+      margin-bottom: 20px;
+    }
+    a {
+      color: #2a7ae2;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      margin: 20px 0;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
 <body>
-
-<h1>MyRProject</h1>
-<p>This project analyzes microdata from 2021 to explore financial inclusion trends.</p>
-
-<h2>Task Overview</h2>
-<p>Perform the following tasks in RStudio:</p>
-<ul>
-  <li>Operationalization and data preparation</li>
-  <li>Descriptive statistics
-    <ul>
-      <li>Bar plot</li>
-      <li>Scatter plot</li>
-    </ul>
-  </li>
-  <li>Inferential statistics
-    <ul>
-      <li>OLS linear regression</li>
-    </ul>
-  </li>
-</ul>
-
-<h2>Files</h2>
-<ul>
-  <li><code>findex_microdata2021.csv</code> — dataset used for analysis</li>
-  <li><code>MyRProject.Rproj</code> — R project file</li>
-  <li><code>.gitignore</code> — files ignored by Git</li>
-</ul>
-
-<h2>Data Source</h2>
-<p>The Micro-Dataset and related resources come from:</p>
-<p><strong>“The Global Findex Database 2021: Financial Inclusion, Digital Payments, and Resilience in the Age of COVID-19”</strong></p>
-<p><a href="https://www.worldbank.org/en/publication/globalfindex" target="_blank" rel="noopener noreferrer">https://www.worldbank.org/en/publication/globalfindex</a></p>
-
-<p>The Macro data (country-level) comes from the World Bank Development Indicators:</p>
-<p><a href="https://databank.worldbank.org/reports.aspx?source=2&country=ARE" target="_blank" rel="noopener noreferrer">https://databank.worldbank.org/reports.aspx?source=2&country=ARE</a></p>
-
-<h2>How to use</h2>
-<p>Open the R project file in RStudio and run the scripts.</p>
-
-<footer>&copy; 2025 MyRProject by Ade</footer>
-
+  <h1>MyRProject</h1>
+  <p>This project analyzes microdata from 2021 to explore financial inclusion trends.</p>
+  
+  <h2>Task Overview</h2>
+  <p>Perform the following tasks in RStudio:</p>
+  <ul>
+    <li>Operationalization and data preparation</li>
+    <li>Descriptive statistics
+      <ul>
+        <li>Bar plot</li>
+        <li>Scatter plot</li>
+      </ul>
+    </li>
+    <li>Inferential statistics
+      <ul>
+        <li>OLS linear regression</li>
+      </ul>
+    </li>
+  </ul>
+  
+  <h2>Files</h2>
+  <ul>
+    <li>findex_microdata2021.csv — dataset used for analysis</li>
+    <li>MyRProject.Rproj — R project file</li>
+    <li>.gitignore — files ignored by Git</li>
+  </ul>
+  
+  <h2>Data source</h2>
+  <p>The Micro-Dataset and related resources come from:</p>
+  <p><strong>“The Global Findex Database 2021: Financial Inclusion, Digital Payments, and Resilience in the Age of COVID-19”</strong></p>
+  <p><a href="https://www.worldbank.org/en/publication/globalfindex" target="_blank">https://www.worldbank.org/en/publication/globalfindex</a></p>
+  
+  <p>The Macro data (country-level) comes from the World Bank Development Indicators</p>
+  <p><a href="https://databank.worldbank.org/reports.aspx?source=2&country=ARE" target="_blank">https://databank.worldbank.org/reports.aspx?source=2&country=ARE</a></p>
+  
+  <h2>Plots</h2>
+  
+  <h3>Financial Inclusion by Gender and Education Level</h3>
+  <img src="barplot.png" alt="Bar Plot: Financial Inclusion by Gender and Education Level" />
+  
+  <h3>Financial Inclusion vs GDP per Capita</h3>
+  <img src="scatterplot.png" alt="Scatter Plot: Financial Inclusion vs GDP per Capita" />
+  
+  <h2>How to use</h2>
+  <p>Open the R project file in RStudio and run the scripts.</p>
 </body>
 </html>
