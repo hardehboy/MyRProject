@@ -3,11 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <title>MyRProject Overview</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fafafa;
+    }
+    h1, h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 6px;
+      margin-top: 1.5em;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    p {
+      margin: 1em 0;
+    }
+    footer {
+      margin-top: 3em;
+      font-size: 0.9em;
+      color: #777;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <h1>MyRProject</h1>
   <p>This project analyzes microdata from 2021 to explore financial inclusion trends.</p>
-  
+
   <h2>Task Overview</h2>
   <p>Perform the following tasks in RStudio:</p>
   <ul>
@@ -24,23 +62,28 @@
       </ul>
     </li>
   </ul>
-  
+
   <h2>Files</h2>
   <ul>
-    <li>findex_microdata2021.csv — dataset used for analysis</li>
-    <li>MyRProject.Rproj — R project file</li>
-    <li>.gitignore — files ignored by Git</li>
+    <li><code>findex_microdata2021.csv</code> — dataset used for analysis</li>
+    <li><code>MyRProject.Rproj</code> — R project file</li>
+    <li><code>.gitignore</code> — files ignored by Git</li>
   </ul>
-  
-  <h2>Data source</h2>
+
+  <h2>Data Source</h2>
   <p>The Micro-Dataset and related resources come from:</p>
-  <p>“The Global Findex Database 2021: Financial Inclusion, Digital Payments, and Resilience in the Age of COVID-19”</p>
-  <p><a href="https://www.worldbank.org/en/publication/globalfindex">https://www.worldbank.org/en/publication/globalfindex</a></p>
-  
-  <p>The Macro data (country-level) comes from the World Bank Development Indicators</p>
-  <p><a href="https://databank.worldbank.org/reports.aspx?source=2&country=ARE">https://databank.worldbank.org/reports.aspx?source=2&country=ARE</a></p>
-  
+  <p><strong>“The Global Findex Database 2021: Financial Inclusion, Digital Payments, and Resilience in the Age of COVID-19”</strong></p>
+  <p><a href="https://www.worldbank.org/en/publication/globalfindex" target="_blank" rel="noopener noreferrer">https://www.worldbank.org/en/publication/globalfindex</a></p>
+
+  <p>The Macro data (country-level) comes from the World Bank Development Indicators:</p>
+  <p><a href="https://databank.worldbank.org/reports.aspx?source=2&country=ARE" target="_blank" rel="noopener noreferrer">https://databank.worldbank.org/reports.aspx?source=2&country=ARE</a></p>
+
   <h2>How to use</h2>
   <p>Open the R project file in RStudio and run the scripts.</p>
+
+  <footer>
+    &copy; 2025 MyRProject by Ade
+  </footer>
 </body>
 </html>
+
